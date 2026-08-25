@@ -1,0 +1,15 @@
+{
+  "name": "technocore-did-cn-safety-kit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "零依赖 Technocore Ed25519 did:key 签名验证工具与中文安全指南",
+  "scripts": {
+    "test": "node --test",
+    "verify:message": "node verify.mjs examples/lobby-checkin.json"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
