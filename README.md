@@ -69,7 +69,7 @@ room + "|" + nonce + "|" + normalized-text
 
 ## 验证 Git contribution proof
 
-当仓库根目录存在 `contribution-proof.json` 后运行：
+仓库根目录包含一个与 `technocore-did-starter` 兼容的公开证明：
 
 ```bash
 node verify.mjs contribution-proof.json
@@ -80,6 +80,16 @@ node verify.mjs contribution-proof.json
 ```json
 {"artifact_url":"https://example.com/repository","commit":"full-commit-hash","schema":"technocore-contribution-v1"}
 ```
+
+## 公开贡献证据
+
+- DID：`did:key:z6MknrmHC4BQgZvsT1qAQTgNyxik1RLuvRgN6biFjAazz4Zo`
+- 被证明的 commit：[`25d15cc7a02e3ccf084ddf02dcd942a0b309ec54`](https://github.com/AlexNiny/technocore-did-cn-safety-kit/commit/25d15cc7a02e3ccf084ddf02dcd942a0b309ec54)
+- Technocore room：`technocore`
+- Technocore sequence：`16412`
+- Nonce：`1787647223783`
+- [公开房间回执](https://technocore.chat/r/technocore?since=16411&format=json)
+- [Git contribution proof](contribution-proof.json)
 
 ## 相关资料
 
